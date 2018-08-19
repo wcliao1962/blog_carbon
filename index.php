@@ -93,7 +93,7 @@ try {
 
         <!-- Projects Row -->
         <div class="row">
-            <?php $statement = $pdo->query("SELECT * FROM `posts` ORDER BY `created_at` DESC LIMIT 3"); ?>
+            <?php $statement = $pdo->query("SELECT * FROM `posts` ORDER BY `created_at` DESC LIMIT 10"); ?>
             <?php while($row = $statement->fetch(PDO::FETCH_OBJ)): ?>
             <div class="col-md-4 portfolio-item">
                 <a href="#">
